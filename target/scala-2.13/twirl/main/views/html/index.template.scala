@@ -31,7 +31,7 @@ Seq[Any](format.raw/*2.1*/("""
 """)))}),format.raw/*7.2*/("""
 
 """),_display_(/*9.2*/main("Welcome to Play")/*9.25*/ {_display_(Seq[Any](format.raw/*9.27*/("""
-  """),_display_(/*10.4*/form(routes.PersonController.addPerson())/*10.45*/ {_display_(Seq[Any](format.raw/*10.47*/("""
+  """),_display_(/*10.4*/form(routes.PersonController.addPerson)/*10.43*/ {_display_(Seq[Any](format.raw/*10.45*/("""
 		"""),_display_(/*11.4*/inputText(person("name"))),format.raw/*11.29*/("""
 		"""),_display_(/*12.4*/inputText(person("age"))),format.raw/*12.28*/("""
 		"""),_display_(/*13.4*/CSRF/*13.8*/.formField),format.raw/*13.18*/("""
@@ -57,10 +57,9 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2020-08-17T13:12:46.804
-                  SOURCE: C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example/app/views/index.scala.html
-                  HASH: bee4544589f691fa2ae7cb61013769bdab889ba4
-                  MATRIX: 767->1|913->77|957->75|984->93|1011->95|1025->102|1058->127|1104->136|1134->141|1149->148|1183->162|1214->164|1242->167|1273->190|1312->192|1342->196|1392->237|1432->239|1462->243|1508->268|1538->272|1583->296|1613->300|1625->304|1656->314|1687->318|1795->396|1827->398
+                  SOURCE: app/views/index.scala.html
+                  HASH: 1e8b98c9cbfd0a2dae6e8c3f920c099c2c890244
+                  MATRIX: 767->1|913->77|957->75|984->93|1011->95|1025->102|1058->127|1104->136|1134->141|1149->148|1183->162|1214->164|1242->167|1273->190|1312->192|1342->196|1390->235|1430->237|1460->241|1506->266|1536->270|1581->294|1611->298|1623->302|1654->312|1685->316|1793->394|1825->396
                   LINES: 21->1|24->3|27->2|28->4|29->5|29->5|29->5|29->5|30->6|30->6|30->6|31->7|33->9|33->9|33->9|34->10|34->10|34->10|35->11|35->11|36->12|36->12|37->13|37->13|37->13|39->15|42->18|43->19
                   -- GENERATED --
               */

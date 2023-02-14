@@ -1,6 +1,5 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example - Copy/conf/routes
-// @DATE:Mon Aug 17 18:25:54 IST 2020
+// @SOURCE:conf/routes
 
 package controllers;
 

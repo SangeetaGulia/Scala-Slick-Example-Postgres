@@ -1,6 +1,5 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example - Copy/conf/routes
-// @DATE:Mon Aug 17 18:25:54 IST 2020
+// @SOURCE:conf/routes
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -18,16 +17,6 @@ package controllers.javascript {
     }
 
   
-    // @LINE:8
-    def getPersons: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.PersonController.getPersons",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "persons"})
-        }
-      """
-    )
-  
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.PersonController.index",
@@ -44,6 +33,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "person"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def getPersons: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.PersonController.getPersons",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "persons"})
         }
       """
     )

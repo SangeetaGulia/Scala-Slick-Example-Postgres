@@ -51,8 +51,7 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2020-08-17T13:12:46.818
-                  SOURCE: C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example/app/views/main.scala.html
+                  SOURCE: app/views/main.scala.html
                   HASH: 3ba878406d2303e78c7bc95b486136d1c7371770
                   MATRIX: 733->1|857->32|884->33|961->84|986->89|1079->156|1093->162|1153->201|1216->237|1244->244|1276->249
                   LINES: 21->1|26->2|27->3|31->7|31->7|32->8|32->8|32->8|35->11|35->11|36->12

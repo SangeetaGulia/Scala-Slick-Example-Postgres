@@ -1,6 +1,5 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example - Copy/conf/routes
-// @DATE:Mon Aug 17 18:25:54 IST 2020
+// @SOURCE:conf/routes
 
 import play.api.mvc.Call
 
@@ -17,22 +16,22 @@ package controllers {
     }
 
   
-    // @LINE:8
-    def getPersons(): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "persons")
-    }
-  
     // @LINE:6
-    def index(): Call = {
+    def index: Call = {
       
       Call("GET", _prefix)
     }
   
     // @LINE:7
-    def addPerson(): Call = {
+    def addPerson: Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "person")
+    }
+  
+    // @LINE:8
+    def getPersons: Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "persons")
     }
   
   }

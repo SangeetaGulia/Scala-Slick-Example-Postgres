@@ -1,6 +1,5 @@
 // @GENERATOR:play-routes-compiler
-// @SOURCE:C:/Users/sangeetg/Downloads/play-samples-2.8.x/play-samples-2.8.x/play-scala-slick-example - Copy/conf/routes
-// @DATE:Mon Aug 17 18:25:54 IST 2020
+// @SOURCE:conf/routes
 
 package router
 
@@ -14,24 +13,24 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:6
-  PersonController_1: controllers.PersonController,
+  PersonController_0: controllers.PersonController,
   // @LINE:11
-  Assets_0: controllers.Assets,
+  Assets_1: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:6
-    PersonController_1: controllers.PersonController,
+    PersonController_0: controllers.PersonController,
     // @LINE:11
-    Assets_0: controllers.Assets
-  ) = this(errorHandler, PersonController_1, Assets_0, "/")
+    Assets_1: controllers.Assets
+  ) = this(errorHandler, PersonController_0, Assets_1, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, PersonController_1, Assets_0, prefix)
+    new Routes(errorHandler, PersonController_0, Assets_1, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -55,7 +54,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_PersonController_index0_invoker = createInvoker(
-    PersonController_1.index,
+    PersonController_0.index,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PersonController",
@@ -73,7 +72,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("person")))
   )
   private[this] lazy val controllers_PersonController_addPerson1_invoker = createInvoker(
-    PersonController_1.addPerson,
+    PersonController_0.addPerson,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PersonController",
@@ -91,7 +90,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("persons")))
   )
   private[this] lazy val controllers_PersonController_getPersons2_invoker = createInvoker(
-    PersonController_1.getPersons,
+    PersonController_0.getPersons,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.PersonController",
@@ -109,7 +108,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
   private[this] lazy val controllers_Assets_versioned3_invoker = createInvoker(
-    Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
+    Assets_1.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.Assets",
@@ -128,25 +127,25 @@ class Routes(
     // @LINE:6
     case controllers_PersonController_index0_route(params@_) =>
       call { 
-        controllers_PersonController_index0_invoker.call(PersonController_1.index)
+        controllers_PersonController_index0_invoker.call(PersonController_0.index)
       }
   
     // @LINE:7
     case controllers_PersonController_addPerson1_route(params@_) =>
       call { 
-        controllers_PersonController_addPerson1_invoker.call(PersonController_1.addPerson)
+        controllers_PersonController_addPerson1_invoker.call(PersonController_0.addPerson)
       }
   
     // @LINE:8
     case controllers_PersonController_getPersons2_route(params@_) =>
       call { 
-        controllers_PersonController_getPersons2_invoker.call(PersonController_1.getPersons)
+        controllers_PersonController_getPersons2_invoker.call(PersonController_0.getPersons)
       }
   
     // @LINE:11
     case controllers_Assets_versioned3_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned3_invoker.call(Assets_0.versioned(path, file))
+        controllers_Assets_versioned3_invoker.call(Assets_1.versioned(path, file))
       }
   }
 }
